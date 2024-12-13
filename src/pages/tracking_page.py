@@ -95,7 +95,7 @@ class TrackingPage(BasePage):
                 if search_field:
                     search_field.clear()
                     self.search_tracking(tracking_number)
-                    time.sleep(3)  # Pode ser ajustado com uma espera explícita
+                    time.sleep(3)
 
                 if self.validate_tracking_number(tracking_number):
                     status = self.get_text(
